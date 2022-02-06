@@ -583,9 +583,10 @@ extern class Gui {
         Disabled nodes are not rendered and animations acting on them are not evaluated.
 
         @param node node to query
+        @param recursive check hierarchy recursively 
         @return whether the node is enabled or not
     **/
-    static function is_enabled(node:GuiNode):Bool;
+    static function is_enabled(node:GuiNode, ?recursive: Bool):Bool;
 
     /**
         Moves the first node above the second.
